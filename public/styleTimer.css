@@ -1,0 +1,63 @@
+/* Style général */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+/* Conteneur du compte à rebours */
+.countdown-container {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du titre */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du compteur */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style des blocs de temps */
+.time-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animation au survol */
+.time-box:hover {
+    transform: scale(1.1);
+}
+
+/* Chiffres du compteur */
+.time-box span {
+    font-size: 2.5em;
+    font-weight: bold;
+    display: block;
+}
+
+/* Texte en dessous des chiffres */
+.time-box p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}

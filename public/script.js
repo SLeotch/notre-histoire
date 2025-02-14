@@ -13,3 +13,21 @@ function checkPassword() {
         errorMessage.textContent = "Mot de passe incorrect, essayez à nouveau.";
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const textElement = document.querySelector("#lettre p");
+    const text = textElement.textContent;
+    textElement.textContent = ""; // On vide le paragraphe
+
+    let index = 0;
+    function afficherLettre() {
+        if (index < text.length) {
+            textElement.textContent += text[index];
+            index++;
+            setTimeout(afficherLettre, 50); // Ajuste la vitesse ici (50ms par lettre)
+        }
+    }
+
+    afficherLettre();
+});
+
